@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Погода в городах</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter a city">
+            <div id="autocomplete-list" class="autocomplete-items"></div>
+            <button id="search-btn">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <p id="city-name"></p>
+            <p id="temperature"></p>
+            <p id="min-temperature"></p>
+            <p id="max-temperature"></p>
+            <p id="humidity"></p>
+            <p id="pressure"></p>
+            <p id="wind-speed"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

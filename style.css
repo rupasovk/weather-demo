@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input,
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-container input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info p {
+    margin: 10px 0;
+}
+
+.autocomplete-items {
+    position:absolute;
+    margin-left: 30%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 99;
+    width: 40%;
+    top: 25%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.weather-info #city-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .weather-info #temperature,
+  .weather-info #min-temperature,
+  .weather-info #max-temperature,
+  .weather-info #humidity,
+  .weather-info #pressure,
+  .weather-info #wind-speed {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather-info #temperature::before,
+  .weather-info #min-temperature::before,
+  .weather-info #max-temperature::before,
+  .weather-info #humidity::before,
+  .weather-info #pressure::before,
+  .weather-info #wind-speed::before {
+    margin-right: 8px;
+  }
